@@ -1,0 +1,14 @@
+plugins {
+    id 'java'
+}
+
+group 'me.glicz'
+version '0.1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+}
