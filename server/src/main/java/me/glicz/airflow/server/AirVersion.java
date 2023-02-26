@@ -1,7 +1,7 @@
-package me.glicz.airflow.server.types;
+package me.glicz.airflow.server;
 
 import lombok.Getter;
-import me.glicz.airflow.types.Version;
+import me.glicz.airflow.Version;
 
 public class AirVersion implements Version {
 

@@ -1,4 +1,4 @@
-package me.glicz.airflow.types;
+package me.glicz.airflow;
 
 public interface Version {
 
