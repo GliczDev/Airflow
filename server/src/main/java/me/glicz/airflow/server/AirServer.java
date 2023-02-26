@@ -12,10 +12,17 @@ public class AirServer implements Server {
     @Getter
     private final String name = "Airflow";
     @Getter
+    private final Logger logger = Logger.getLogger(name);
+    @Getter
     private final Version version = AirVersion.from(1, 19, 2, 760);
 
     public static void main(String[] args) {
-        Airflow.setServer(new AirServer());
-        Logger.getLogger("Airflow").info("In development. Minecraft Version: " + Airflow.getVersion().toString());
+        new AirServer(args);
+    }
+
+    private AirServer(String[] args) {
+        Airflow.setServer(this);
+        logger.info(String.format("Starting %s server...", name));
+        logger.info("In development. Minecraft Version: " + version);
     }
 }
